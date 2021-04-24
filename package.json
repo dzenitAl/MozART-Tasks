@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@nativescript/core": "^8.0.2"
+  }
+}

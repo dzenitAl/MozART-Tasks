@@ -1,0 +1,116 @@
+// NativeScript core theme
+// @see https://docs.nativescript.org/ui/theme
+@import '~@nativescript/theme/core';
+@import '~@nativescript/theme/aqua';
+
+// Override variables here
+
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+// Font icon class
+.fab {
+  font-family: 'Font Awesome 5 Brands', 'fa-brands-400';
+  font-weight: 400;
+}
+
+.fas {
+  font-family: 'Font Awesome 5 Free', 'fa-solid-900';
+  font-weight: 900;
+}
+
+.far {
+  font-family: 'Font Awesome 5 Free', 'fa-regular-400';
+  font-weight: 400;
+}
+.glavni{
+  background-image: url("~/images/prvaKategPozadina.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.prvi{
+  // margin: 35 15 15 15;
+ background-color: red;
+ width: 800px;
+ height: 700px;
+ background-image: url("~/images/puzle.png");
+ background-size: cover;
+ background-position: center;
+  
+}
+.drugi{
+  // margin: 15;
+ margin-top: 20px;
+ background-color: yellow;
+ width: 800px;
+ height: 700px;
+ background-image: url("~/images/mem.png");
+ background-size: cover;
+ background-position: center;
+}
+.treci{
+  margin-top: 20px;
+  // background-color: orange;
+  width: 800px;
+  height: 700px;
+  background-image: url("~/images/staCujes.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.memory{
+  // padding-top: 20px;
+  width: 100%;
+  height: 20%;
+  background-color: yellow;
+  margin-top: 620px;
+  font-weight: bold;
+  color: gray;
+  font-size: 17px;
+}
+.pazl{
+  width: 100%;
+  height: 20%;
+  background-color: yellow;
+  margin-top: 620px;
+  font-weight: bold;
+  color: gray;
+  font-size: 17px;
+
+}
+.hear{
+  width: 100%;
+  height: 20%;
+  background-color:yellow;
+  margin-top: 630px;
+  font-weight: bold;
+  color: gray;
+  font-size: 17px;
+}
+.edin{
+  width: 100%;
+
+}
+.slikaMemory{
+  width: 100%;
+}
+.staCujes{
+  width: 100%;
+  height: 20%;
+}
+.back{
+  margin: 30 0 0 15;
+}
+.back2{
+  margin:37 0 0 22;
+  background-image: "https://cdn0.iconfinder.com/data/icons/outlined-buttons-pack/200/buttons_redo-512.png";
+  background-size: cover;
+  background-position: center;
+
+}
