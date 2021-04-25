@@ -179,7 +179,7 @@
     this.image1=this.images[0];
     this.image2=this.images[1];
     this.image3=this.images[2];
-    this.kategorijaTekst="Prva kategorija za predskolski uzrast od 5-6 godina";
+    this.kategorijaTekst=" Predškolarci";
   },
   }
 </script>
