@@ -108,8 +108,8 @@ methods:{
         font-family: Font Awesome 5 Free, fa-solid-900;
         font-weight: 900;
         color: black;
-        top: 23%;
-        left: 26%;
+        top: 40%;
+        left: 30%;
         font-size: 30%;
     }
 .glavni{
