@@ -3,6 +3,8 @@
         <ActionBar title="Home" />
         <GridLayout class="grid1">
             <GridLayout class="boxGlavni">
+
+
                 <GridLayout class="label">
                     
                         <GridLayout class="span1" id="span1" ref="span1">
@@ -35,16 +37,63 @@
             </GridLayout>
 
             <Button class="label1" @tap="turn" ></Button>
-            <Label class="label2"  >
 
-                <FormattedString>
-                 <span class="labelText" :text="kategorijaTekst" textWrap="true"   />
+            <!-- <Label class="label2"  textWrap="true"> -->
+
+        
+        <GridLayout class="label2">
+              <Label class="nesto">
+
+                <FormattedString >
+                 <Span class="labelText" :text="kategorijaTekst"  wrapper="true"></Span>
                 </FormattedString> 
+              </Label>
                 <!-- <Label class="labelText" :text="kategorijaTekst" textWrap="true" loaded="onLabelLoaded">
 
                 </Label> -->
                 
-            </Label>
+            <!-- </Label> -->
+        </GridLayout>
+        <GridLayout class="djecakOkvir">
+             <StackLayout>
+              <Image src="~/images/djecak.png" ></Image>
+               </StackLayout>
+        </GridLayout>
+        <GridLayout class="curicakOkvir">
+             <StackLayout>
+              <Image src="~/images/curica.png" ></Image>
+               </StackLayout>
+        </GridLayout>
+         <GridLayout class="notekOkvir">
+             <StackLayout>
+              <Image src="~/images/note.png" ></Image>
+               </StackLayout>
+        </GridLayout>
+
+         <GridLayout class="notePocetakOkvir">
+             <StackLayout>
+              <Image src="~/images/notePocetak.png" ></Image>
+               </StackLayout>
+        </GridLayout>
+         <GridLayout class="notaRozaOkvir">
+             <StackLayout>
+              <Image src="~/images/notaRoza.png" ></Image>
+               </StackLayout>
+        </GridLayout>
+        <GridLayout class="punoNotaOkvir">
+             <StackLayout>
+              <Image src="~/images/punoNota.png" ></Image>
+               </StackLayout>
+        </GridLayout>
+          <GridLayout class="notaDvaOkvir">
+             <StackLayout>
+              <Image src="~/images/notaDva.png" ></Image>
+               </StackLayout>
+        </GridLayout>
+
+<GridLayout class="BijeliOkvir"></GridLayout>
+<GridLayout class="BijeliOkvir2"></GridLayout>
+
         </GridLayout>
 
 
@@ -73,6 +122,7 @@
         },
         {
           id: 2,
+        //   src: "https://i.pinimg.com/564x/1a/c3/26/1ac326d2f2fd6924b17e5000f528a548.jpg"
           src: "https://i.pinimg.com/236x/84/cd/70/84cd7085e91c7e440ca4a210ec30972f.jpg"
           
         },
@@ -93,7 +143,7 @@
                          console.log("prvo sam usao u ovaj if uslov");
                     this.image1=this.images[1];
                     this.image2=this.images[0];
-                        this.kategorijaTekst="Druga kategorija za rani školski uzrast od 7-8 godina";
+                        this.kategorijaTekst="  Mali školarci";
                      this.index++;//vrijednost indexa je sada 1
                      }
                     else if(this.index===1){
@@ -101,13 +151,13 @@
                         this.image1=this.images[2]; //ovdje bi trebalo da uzme trecu sliku
                         this.image2=this.images[1];
                         this.image3=this.images[0];
-                        this.kategorijaTekst="Treca kategorija za djecu koja su spremna učiti";
+                        this.kategorijaTekst="  Veliki školarci";
                         this.index++;
                     }else if(this.index===2){
                         console.log("treci uslov je kliknut");
                         this.image1=this.images[0];
                         this.image3=this.images[2];
-                        this.kategorijaTekst="Prva kategorija za predskolski uzrast od 5-6 godina";
+                        this.kategorijaTekst="  Predškolarci";
                         
                         this.index=0;
                     }
@@ -166,16 +216,19 @@
         width: 420px;
 }
 .grid1{
-    background-color: yellow;
+    // background-color: yellow;
     height: 100%;
     /* margin-bottom: 50px; */
     /* overflow: hidden; */
     border-style: 2px solid #fff;
+    background-image: url("~/images/PRVAPOZ.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .label{
     width: 1100px;
     height: 1110px;
-    background-color: black;
+    background-color: #0DDCE4;
     /* border-radius: 900px; */
     border-radius: 250%;
     margin-left: 800px;
@@ -185,23 +238,30 @@
 .label1{
      width: 200px;
     height: 200px;
-    background-color: white;
-    margin-right: 430px;
+    background-color:yellow;
+    margin-right: 490px;
     margin-bottom: 550px;
     clip-path: polygon(72% 52%, 0 1%, 0 100%);
 }
 .label2{
-    width: 800px;
-    height: 800px;
-    background-color: red;
+    width: 700px;
+    height: 700px;
+    background-color: #FFA31A;
     border-radius: 450px;
     margin-right: 450px;
-    margin-top: 1000px;
+    margin-top: 800px;
+    
    
 }
 .labelText{
-    background-color: blueviolet;
-   
+    // background-color: yellow;
+    // margin-top: 00px;
+    color:white; 
+    font-size: 22px;
+    font-weight: bold;
+    // position: relative;
+    // top:200px;
+    // margin-top:50%;
     
     
 }
@@ -277,5 +337,83 @@
        top: 250px;
        font-weight: bold;
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   .nesto{
+    //    margin-top: 200px;
+    margin-bottom: 20px;
+       background-color: #FFA31A;
+       width: 500px;
+       height: 100px;
+       color: white;
+       font-size: 30px;
+       margin-left: 100px;
+   }
+
+   .djecakOkvir{
+    //    background-color: yellow;
+       width: 600px;
+       height: 550px;
+       margin-top:1250px;
+       margin-left:300px;
+  
+   }
+   .curicakOkvir{
+       width: 600px;
+       height: 550px;
+       margin-top:1250px;
+    //    margin-left:100px;
+    margin-right: 460px;
+   }
+   .notekOkvir{
+        width: 400px;
+       height: 400px;
+       margin-top:900px;
+        margin-left:580px;
+   }
+   .notePocetakOkvir{
+       width: 600px;
+       height: 600px;
+       margin-bottom: 80%;
+        // margin-left:20px;
+        margin-right: 70%;
+   }
+   .notaRozaOkvir{
+       width: 150px;
+       height: 150px;
+       margin-bottom: 70%;
+        // margin-left:20px;
+        margin-right: 87%;
+   }
+   .punoNotaOkvir{
+       width: 450px;
+       height: 450px;
+       margin-top: 30%;
+        // margin-left:20px;
+        // margin-right: 10%;
+      margin-right: 40%;
+   }
+   .notaDvaOkvir{
+         width: 150px;
+       height: 150px;
+       margin-bottom: 90%;
+        // margin-left:20px;
+        margin-right: 50%;
+   }
+   .BijeliOkvir{
+       background-color:white;
+       width: 320px;
+       height: 500px;
+       margin-top: 1200px;
+       margin-left: 680px;
+    //    overflow: hidden;
+       z-index: -1;
+   }
+   .BijeliOkvir2{
+       width: 95%;
+       height: 400px;
+       background-color:white;
+       margin-top: 1600px;
+       z-index: -1;
+       margin-right: 30px;
    }
 </style>

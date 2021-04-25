@@ -3,6 +3,7 @@ import App from './components/App.vue'
 import Test from './components/Test.vue'
 import { Label } from 'tns-core-modules/ui/label';
 import { isAndroid } from 'tns-core-modules/platform';
+import DictatsCompositions from './components/DictatsCompositions.vue'
 
 new Vue({
   

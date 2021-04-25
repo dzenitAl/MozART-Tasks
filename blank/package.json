@@ -6,7 +6,7 @@
   "author": "Mehmed Karadža <69600316+Meshakarry@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "@nativescript/core": "^7.0.3",
+    "@nativescript/core": "^7.3.0",
     "@nativescript/theme": "^2.3.3",
     "@vue/devtools": "^5.3.3",
     "nativescript-socketio": "^3.3.1",
