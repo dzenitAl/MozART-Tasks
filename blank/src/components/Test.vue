@@ -117,21 +117,27 @@
       kategorijaTekst:"",
       images: [{
           id: 1,
-          src: "https://i.pinimg.com/564x/4c/f9/11/4cf911d9a5a73d6669a6ebc244fb31b0.jpg"
+        //   src: "https://i.pinimg.com/564x/4c/f9/11/4cf911d9a5a73d6669a6ebc244fb31b0.jpg",
+          src: "~/images/prva.jpg"
+
         
         },
         {
           id: 2,
         //   src: "https://i.pinimg.com/564x/1a/c3/26/1ac326d2f2fd6924b17e5000f528a548.jpg"
-          src: "https://i.pinimg.com/236x/84/cd/70/84cd7085e91c7e440ca4a210ec30972f.jpg"
+        //   src: "https://i.pinimg.com/236x/84/cd/70/84cd7085e91c7e440ca4a210ec30972f.jpg",
+          src: "~/images/druga.jpg"
+
+        
           
         },
         {
           id: 3,
-          src: "https://i.pinimg.com/564x/d0/86/8b/d0868bf19279f7c51532ba3d8ea8ccb0.jpg"
+        //   src: "https://i.pinimg.com/564x/d0/86/8b/d0868bf19279f7c51532ba3d8ea8ccb0.jpg", 
+          src: "~/images/treca.jpg"
+
          
-        }
-     ]
+        }]
         }
       },
     methods:{
